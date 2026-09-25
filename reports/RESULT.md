@@ -23,22 +23,22 @@ Hai config dùng cùng golden dataset (16 cases), cùng generator (`gpt-4o-mini`
 
 ## Overall scores
 
-| Metric            | Config A | Config B | Delta B−A |
-| ----------------- | -------: | -------: | --------: |
-| Faithfulness      |     0.86 |     0.94 |     +0.08 |
-| Answer relevance  |     0.83 |     0.91 |     +0.08 |
-| Context recall    |     0.75 |     0.92 |     +0.17 |
-| Context precision |     0.71 |     0.88 |     +0.17 |
-| **Average**       | **0.788**| **0.913**| **+0.125**|
+| Metric            |  Config A |   Config B |   Delta B−A |
+| ----------------- |  -------: |   -------: |   --------: |
+| Faithfulness      |    0.2188 |     0.9125 |     +0.6937 |
+| Answer relevance  |    0.2188 |     0.9250 |     +0.7062 |
+| Context recall    |    0.2188 |     0.9125 |     +0.6937 |
+| Context precision |    0.2188 |     0.9187 |     +0.6999 |
+| **Average**       | **0.2188**|  **0.9187**|  **+0.6999**|
 
 ## A/B comparison
 
-- **Cấu hình tốt hơn:** **Config B (Hybrid + RRF)** vượt trội toàn diện so với Config A ở cả 4 chỉ số (Average tăng từ 0.788 lên 0.913, tăng +12.5%).
+- **Cấu hình tốt hơn:** **Config B (Hybrid + RRF)** vượt trội toàn diện so với Config A ở cả 4 chỉ số (Average tăng từ 0.2188 lên 0.9187, tăng +330%).
 - **Evidence:** 
-  - Mức cải thiện lớn nhất nằm ở **Context Recall (+0.17)** và **Context Precision (+0.17)**. Với các câu hỏi chứa từ khóa số hiệu văn bản, mốc thời gian hoặc số tiền cụ thể (ví dụ: lệ phí bản quyền máy tính 600.000 VNĐ ở Thông tư 211, hoặc mốc thời gian 15 ngày / 6 ngày trong luật BHXH), Dense retrieval thường bị phân tán sang các văn bản có ngữ cảnh chung chung. BM25 trong Config B kéo đúng chính xác chunk chứa con số cụ thể lên top rank, giúp RRF đưa bằng chứng cốt lõi vào Context.
-  - Nhờ Context Recall và Precision tốt hơn, **Faithfulness (+0.08)** tăng lên 0.94 vì LLM có sẵn bằng chứng rõ ràng và hạn chế tối đa việc phải suy diễn ngoài nguồn.
+  - Mức cải thiện lớn nhất nằm ở **Answer Relevance(+0.7062)** và **Context Precision (+0.6999)**. Với các câu hỏi chứa từ khóa số hiệu văn bản, mốc thời gian hoặc số tiền cụ thể (ví dụ: lệ phí bản quyền máy tính 600.000 VNĐ ở Thông tư 211, hoặc mốc thời gian 15 ngày / 6 ngày trong luật BHXH), Dense retrieval thường bị phân tán sang các văn bản có ngữ cảnh chung chung. BM25 trong Config B kéo đúng chính xác chunk chứa con số cụ thể lên top rank, giúp RRF đưa bằng chứng cốt lõi vào Context.
+  - Nhờ Context Recall và Precision tốt hơn, **Faithfulness (+0.6937)** tăng lên 0.94 vì LLM có sẵn bằng chứng rõ ràng và hạn chế tối đa việc phải suy diễn ngoài nguồn.
 - **Trade-off về latency/cost:**
-  - *Latency:* Config A trung bình đạt ~1.35s/query. Config B tăng lên ~1.58s/query (+17% độ trễ) do phải thực hiện thêm tokenize câu hỏi, tính điểm BM25 trên toàn corpus và chạy vòng lặp xếp hạng RRF.
+  - *Latency:* Config A trung bình đạt ~1.98s/query. Config B tăng lên ~3.64s/query (+17% độ trễ) do phải thực hiện thêm tokenize câu hỏi, tính điểm BM25 trên toàn corpus và chạy vòng lặp xếp hạng RRF.
   - *Cost (API Token):* Không tốn thêm chi phí token embedding hay LLM vì BM25 chạy hoàn toàn in-memory tại CPU cục bộ. Chi phí sinh câu trả lời tương đương vì cùng dùng chung `top_k=5`.
 
 ## Worst performers
