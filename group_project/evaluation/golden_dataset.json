@@ -1,0 +1,98 @@
+[
+  {
+    "id": "case_01",
+    "question": "What is the statute of limitations for instituting an administrative lawsuit against an administrative decision or act under Vietnamese law?",
+    "expected_answer": "The statute of limitations for instituting a lawsuit is one year from the date of receipt of or knowledge about the administrative decision, administrative act, or disciplinary decision on dismissal.",
+    "expected_context": "The statute of limitations for lawsuit institution in each case is: a/ One year from the date of receipt of or knowledge about an administrative decision or act or a disciplinary decision on dismissal;"
+  },
+  {
+    "id": "case_02",
+    "question": "Who may represent the defendant in administrative procedures if the defendant is an agency, organization, or its head?",
+    "expected_answer": "If the defendant is an agency or organization or its head, he or she may only authorize his or her deputy to represent him or her in administrative procedures.",
+    "expected_context": "In case a defendant is an agency or organization or its head, he/she may only authorize his/her deputy to represent him/her in administrative procedures. The authorized person shall participate in the settlement of the whole case and fully exercise the rights and perform the obligations of defendants specified in this Law."
+  },
+  {
+    "id": "case_03",
+    "question": "What is the fee for the first registration of copyright for computer programs according to Circular No. 211/2016/TT-BTC?",
+    "expected_answer": "The fee for processing applications for the first registration of copyright for computer programs, data collection programs, or other programs run on computers is 600,000 VND per certificate.",
+    "expected_context": "Computer programs, data collection programs or other programs run on computers | 600,000 | (VND/ Certificate)"
+  },
+  {
+    "id": "case_04",
+    "question": "How much can the fee collector retain from collected copyright registration fees if provided with predetermined operational funding?",
+    "expected_answer": "The collector may retain 70% of the total amount of collected fees to cover expenditures for processing applications and fee collection, and must transfer the remaining 30% to the state budget.",
+    "expected_context": "If the collector is provided with a predetermined funding for operation in conformity with regulations of the Government or the Prime Minister on the autonomy in payroll and use of administrative expenditures by state agencies, the collector may retain 70% of the total amount of collected fees in order to cover its expenditures for conducting activities related to the processing of applications and fee collection... The collector shall transfer the remaining amount (30%) to state budget"
+  },
+  {
+    "id": "case_05",
+    "question": "When is Vietnam Science and Technology Day celebrated every year?",
+    "expected_answer": "Vietnam Science and Technology Day is on May 18.",
+    "expected_context": "Article 7. Vietnam Science and Technology Day\nVietnam Science and Technology Day is May 18."
+  },
+  {
+    "id": "case_06",
+    "question": "What minimum percentage of profits from the commercialization of state-funded scientific research must be shared with the author?",
+    "expected_answer": "At least 30% of the profits earned from the use, transfer of the right of use, transfer of capital, or contribution of capital in the form of findings from state-funded scientific research must be dispensed to the author.",
+    "expected_context": "At least 30% of the profits earned from the use, transfer of the right of use, transfer of capital, distribution of capital in the form of research findings... shall be dispensed to the author; the remainder shall be dispensed amongst owners, presiding agencies, brokers according to the Government's regulations."
+  },
+  {
+    "id": "case_07",
+    "question": "Lao động nữ sinh con được nghỉ việc hưởng chế độ thai sản trước và sau khi sinh tổng cộng bao nhiêu tháng?",
+    "expected_answer": "Lao động nữ sinh con được nghỉ việc hưởng chế độ thai sản trước và sau khi sinh con là 06 tháng. Trường hợp sinh đôi trở lên thì từ con thứ 2 trở đi, cứ mỗi con người mẹ được nghỉ thêm 01 tháng. Thời gian nghỉ trước sinh tối đa không quá 02 tháng.",
+    "expected_context": "Lao động nữ sinh con được nghỉ việc trước và sau khi sinh con là 06 tháng. Trường hợp sinh đôi trở lên thì từ con thứ 2 trở đi, cứ mỗi con, người mẹ được nghỉ thêm 01 tháng. Thời gian nghỉ trước khi sinh tối đa không quá 02 tháng."
+  },
+  {
+    "id": "case_08",
+    "question": "Mức tiền trợ cấp một lần khi sinh con cho mỗi con được tính bằng bao nhiêu lần mức lương cơ sở?",
+    "expected_answer": "Mức trợ cấp 1 lần khi sinh con cho mỗi con bằng 02 lần mức lương cơ sở tại tháng sinh con (tương ứng 4.680.000 đồng/con với mức lương cơ sở 2,34 triệu đồng/tháng).",
+    "expected_context": "Khoản 4 Điều 58 Luật Bảo hiểm xã hội quy định: Lao động nữ sinh con được trợ cấp 1 lần cho mỗi con bằng 02 lần mức lương cơ sở tại tháng sinh con. Trường hợp sinh con nhưng chỉ có cha tham gia BHXH thì cha được trợ cấp 1 lần bằng 02 lần mức lương cơ sở tại tháng sinh cho mỗi con. Mức lương cơ sở hiện nay là 2,34 triệu đồng/tháng. Do đó, mức trợ cấp 1 lần cho mỗi con là 2.340.000 đồng x 2 = 4.680.000 đồng."
+  },
+  {
+    "id": "case_09",
+    "question": "Trong thời gian mang thai, người lao động nữ được nghỉ việc đi khám thai bao nhiêu lần và thời gian nghỉ mỗi lần là mấy ngày?",
+    "expected_answer": "Trong thời gian mang thai, lao động nữ được nghỉ việc để đi khám thai 05 lần, mỗi lần 01 ngày. Trường hợp ở xa cơ sở y tế hoặc thai có bệnh lý, thai không bình thường thì được nghỉ 02 ngày cho mỗi lần khám thai.",
+    "expected_context": "Trong thời gian mang thai, lao động nữ được nghỉ việc để đi khám thai 05 lần, mỗi lần 01 ngày. Trường hợp ở xa cơ sở khám, chữa bệnh hoặc người mang thai có bệnh lý hoặc thai không bình thường thì được nghỉ 02 ngày cho mỗi lần khám thai. Lưu ý: Thời gian này tính theo ngày làm việc không kể ngày nghỉ lễ, tết, ngày nghỉ hàng tuần."
+  },
+  {
+    "id": "case_10",
+    "question": "Người lao động tham gia bảo hiểm xã hội bắt buộc được hưởng những chế độ nào?",
+    "expected_answer": "Người tham gia BHXH bắt buộc được hưởng 5 chế độ: ốm đau; thai sản; tai nạn lao động, bệnh nghề nghiệp; hưu trí; và tử tuất.",
+    "expected_context": "Đóng bảo hiểm xã hội bắt buộc có 5 lợi ích\n(1) Hưởng chế độ ốm đau.\n(2) Hưởng chế độ thai sản.\n(3) Hưởng chế độ tai nạn lao động, bệnh nghề nghiệp.\n(4) Hưởng chế độ hưu trí.\n(5) Hưởng chế độ tử tuất."
+  },
+  {
+    "id": "case_11",
+    "question": "Người tham gia bảo hiểm xã hội tự nguyện được hưởng những chế độ nào và mức thu nhập tối đa được chọn để đóng là bao nhiêu?",
+    "expected_answer": "Người tham gia BHXH tự nguyện được hưởng 2 chế độ là hưu trí và tử tuất. Mức thu nhập đóng BHXH tự nguyện tối đa bằng 20 lần mức lương cơ sở.",
+    "expected_context": "người đóng bảo hiểm xã hội bắt buộc [tự nguyện] được nhận các quyền lợi sau: (1) Hưởng chế độ hưu trí... (2) Hưởng chế độ tử tuất... Tuy nhiên mức thu nhập chọn đóng bảo hiểm xã hội bắt buộc [tự nguyện] tối đa cũng chỉ bằng 20 lần mức lương cơ sở."
+  },
+  {
+    "id": "case_12",
+    "question": "Thời gian tối đa hưởng chế độ ốm đau trong một năm đối với người lao động làm việc trong điều kiện bình thường đóng BHXH dưới 15 năm là bao nhiêu ngày?",
+    "expected_answer": "Thời gian tối đa hưởng chế độ ốm đau trong một năm là 30 ngày (tính theo ngày làm việc, không kể ngày nghỉ lễ, tết, nghỉ hằng tuần) đối với người đã đóng BHXH dưới 15 năm làm việc trong điều kiện bình thường.",
+    "expected_context": "Thời gian tối đa hưởng chế độ ốm đau trong một năm (từ ngày 01 tháng 01 đến ngày 31 tháng 12) tính theo ngày làm việc không kể ngày nghỉ lễ, tết, ngày nghỉ hằng tuần và được quy định như sau: - Làm việc trong điều kiện bình thường: 30 ngày nếu đã đóng bảo hiểm xã hội dưới 15 năm."
+  },
+  {
+    "id": "case_13",
+    "question": "Khi chăm sóc con ốm đau, người lao động được nghỉ hưởng chế độ bảo hiểm xã hội tối đa bao nhiêu ngày trong một năm cho mỗi con?",
+    "expected_answer": "Thời gian tối đa hưởng chế độ khi con ốm đau trong một năm cho mỗi con là: 20 ngày nếu con dưới 03 tuổi; 15 ngày nếu con từ đủ 03 tuổi đến dưới 07 tuổi.",
+    "expected_context": "thời gian hưởng chế độ khi chăm sóc con ốm đau được hưởng BHXH trong một năm (từ ngày 01/01 - ngày 31/12) cho mỗi con tối đa là: - 20 ngày nếu con dưới 03 tuổi; - 15 ngày nếu con từ đủ 03 tuổi đến dưới 07 tuổi."
+  },
+  {
+    "id": "case_14",
+    "question": "Theo Luật Bảo hiểm xã hội 2024 có hiệu lực từ ngày 01/7/2025, người lao động bị tai nạn trên tuyến đường đi từ nơi ở đến nơi làm việc hoặc ngược lại sẽ được hưởng chế độ gì?",
+    "expected_answer": "Từ ngày 01/7/2025, người lao động bị tai nạn trên tuyến đường đi từ nơi ở đến nơi làm việc hoặc từ nơi làm việc về nơi ở trong khoảng thời gian và tuyến đường hợp lý sẽ không được hưởng chế độ tai nạn lao động mà chuyển sang hưởng chế độ ốm đau với mức trợ cấp bằng 75% tiền lương làm căn cứ đóng BHXH.",
+    "expected_context": "Luật BHXH năm 2024 có hiệu lực từ 1/7/2025 quy định trường hợp người lao động bị tai nạn trên tuyến đường đi từ nơi ở đến nơi làm việc hoặc từ nơi làm việc về nơi ở trong khoảng thời gian và tuyến đường hợp lý sẽ không được hưởng chế độ tai nạn lao động, thay vào đó sẽ hưởng chế độ ốm đau. Mức hưởng trợ cấp ốm đau của người lao động bị tai nạn trên đường đi, về và phải nghỉ việc để điều trị là bằng 75% tiền lương làm căn cứ đóng BHXH."
+  },
+  {
+    "id": "case_15",
+    "question": "Theo Luật Bảo hiểm xã hội 2024, độ tuổi hưởng trợ cấp hưu trí xã hội đối với công dân Việt Nam được điều chỉnh giảm xuống còn bao nhiêu tuổi?",
+    "expected_answer": "Từ ngày 01/7/2025, độ tuổi được hưởng trợ cấp hưu trí xã hội giảm từ 80 tuổi xuống còn đủ 75 tuổi trở lên (đối với người thuộc hộ nghèo, hộ cận nghèo thì từ đủ 70 tuổi đến dưới 75 tuổi).",
+    "expected_context": "từ 01/7/2025, độ tuổi được hưởng trợ cấp hưu trí xã hội của người lao động sẽ được giảm xuống còn 75 tuổi theo Điều 21 Luật Bảo hiểm xã hội 2024 (hiện hành là 80 tuổi). Riêng đối với người thuộc hộ nghèo, hộ cận nghèo thì từ đủ 70 - dưới 75 tuổi sẽ được hưởng trợ cấp hưu trí xã hội."
+  },
+  {
+    "id": "case_16",
+    "question": "Mức hưởng bảo hiểm xã hội một lần được tính như thế nào đối với các năm đóng trước năm 2014 và từ năm 2014 trở đi?",
+    "expected_answer": "Cứ mỗi năm đóng BHXH: được tính bằng 1,5 tháng mức bình quân tiền lương tháng đóng BHXH đối với năm đóng trước năm 2014; và bằng 02 tháng mức bình quân tiền lương tháng đóng BHXH đối với năm đóng từ năm 2014 trở đi.",
+    "expected_context": "Mức hưởng bảo hiểm xã hội một lần được tính theo số năm đã đóng và căn cứ đóng bảo hiểm xã hội... cứ mỗi năm được tính như sau: - Bằng 1,5 tháng mức bình quân tiền lương tháng đóng bảo hiểm xã hội đối với năm đóng trước năm 2014... - Bằng 02 tháng mức bình quân tiền lương tháng đóng bảo hiểm xã hội đối với năm đóng từ năm 2014 trở đi;"
+  }
+]

@@ -9,6 +9,7 @@ Lưu ý: RRF score chỉ phản ánh thứ hạng, không dùng để quyết đ
 -> Dùng Jina hoặc self host hoặc bất cứ công cụ nào bạn quen
 """
 
+import copy
 
 def rerank_rrf(
     ranked_lists: list[list[dict]],
@@ -17,24 +18,28 @@ def rerank_rrf(
 ) -> list[dict]:
     """Fuse nhiều ranked lists và trả hybrid SearchResult."""
     # TODO: Implement RRF.
-    #
-    # scores = {}
-    # items = {}
-    # for ranked_list in ranked_lists:
-    #     for rank, item in enumerate(ranked_list, 1):
-    #         item_id = item["id"]
-    #         scores[item_id] = scores.get(item_id, 0.0) + 1 / (k + rank)
-    #         items[item_id] = item
-    #
-    # ranked_ids = sorted(scores, key=scores.get, reverse=True)
-    # results = []
-    # for item_id in ranked_ids[:top_k]:
-    #     result = items[item_id].copy()
-    #     result["score"] = scores[item_id]
-    #     result["retrieval_method"] = "hybrid"
-    #     results.append(result)
-    # return results
-    raise NotImplementedError("Implement rerank_rrf")
+    
+    scores: dict[str, float] = {}
+    items: dict[str, dict] = {}
+    for ranked_list in ranked_lists:
+        seen_in_current_list = set()
+        for rank, item in enumerate(ranked_list, 1):
+            item_id = item["id"]
+            if item_id in seen_in_current_list:
+                continue
+            seen_in_current_list.add(item_id)
+
+            scores[item_id] = scores.get(item_id, 0.0) + 1 / (k + rank)
+            if item_id not in items: items[item_id] = item
+    
+    ranked_ids = sorted(scores.keys(), key=lambda x: scores[x], reverse=True)
+    results = []
+    for item_id in ranked_ids[:top_k]:
+        result = copy.deepcopy(items[item_id])
+        result["score"] = float(scores[item_id])
+        result["retrieval_method"] = "hybrid"
+        results.append(result)
+    return results
 
 
 if __name__ == "__main__":
